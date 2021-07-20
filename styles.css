@@ -1,0 +1,125 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+   margin: 7rem;
+}
+
+.container .card {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+}
+
+.container .card .description-text {
+    padding: 2rem 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-right: 6rem;
+}
+
+.description-text .card-title {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.container .card .image {
+    background: hsl(277, 64%, 61%);
+    position: relative;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.card .image .img {
+    text-align: center;
+    width: 480px;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.description-text .card-body-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.75rem;
+    padding-bottom: 3rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.description-text .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.description-text .stats .stat-list h3 {
+    font-size: 24px;
+    justify-items: baseline;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 15px 0px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 0px;
+    }
+
+    .container .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .card .description-text {
+        order: 1;
+        text-align: center;
+    }
+
+    .container .card .image {
+        justify-content: center;
+        justify-items: center;
+        background: hsl(277, 64%, 61%);
+        position: relative;
+        height: 296px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .card .image .img {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .container .card .description-text {
+        padding: 3rem 3rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .description-text .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-size: 18px;
+    }
+
+    .description-text .card-body-text {
+        padding-bottom: 2rem;
+    }
+
+  }
